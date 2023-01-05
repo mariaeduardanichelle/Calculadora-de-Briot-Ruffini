@@ -11,31 +11,30 @@ if grau == 3:
     an1 = raiz * an2 + x1
     an0 = raiz * an1 + a
     if an0 == 0:
-        print(f'{raiz} é uma raiz do polinômio {x3}x³{x2}x²{x1}x{a}')
+        print(f'\n{raiz} é uma raiz do polinômio {x3}x³{x2}x²{x1}x{a}')
         #Determinando as outras raízes com a fórmula quadrática 
         raiz2 = ((-an2)+ math.sqrt(an2**2-4*x3*an1))/(2*x3) 
         raiz3 = ((-an2)- math.sqrt(an2**2-4*x3*an1))/(2*x3)
-        print(f'As raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz},{raiz2},{raiz3}')
+        print(f'As raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz},{raiz2},{raiz3}\n')
         #Criando tabela do Briot-Ruffini
-        linha1 = [raiz, x3, x2, x1, a]
-        linha12 = [x3, an2, an1, an0]
-        print('{:^6}   {:^13}   {:^13}   {:^13}   {:^13}'.format(*linha1))
-        print('         {:^13}   {:^13}   {:^13}   {:^13}'.format(*linha12))
+        va = ''
+        me = '-'*10
+        print(f'{raiz:^10}|{x3:^10}|{x2:^10}|{x1:^10}|{a:^10}')
+        print(f'{me:^10}+{me:^10}+{me:^10}+{me:^10}+{me:^10}')
+        print(f'{va:^10}|{x3:^10}|{an2:^10}|{an1:^10}|{an0:^10}\n')
         #Fazendo Briot-Ruffini para a raiz2
         an22 = raiz2 * x3 + an2
         an12 = raiz2 * an22 + an1
-        linha2 = [raiz2, x3, an2, an1]
-        linha22 = [x3, an22, an12]
         #Criando tabela do Briot-Ruffini para a raiz2
-        print('{:^6}   {:^13}   {:^13}   {:^13}'.format(*linha2))
-        print('         {:^13}   {:^13}   {:^13}'.format(*linha22)) 
+        print(f'{raiz2:^10}|{x3:^10}|{an2:^10}|{an1:^10}')
+        print(f'{me:^10}+{me:^10}+{me:^10}+{me:^10}')
+        print(f'{va:^10}|{x3:^10}|{an22:^10}|{an12:^10}\n') 
         #Fazendo Briot-Ruffini para a raiz3
         an23 = raiz3 * x3 + an22
-        linha3 = [raiz3, x3, an22]
-        linha32 = [x3, an23]
         #Criando tabela do Briot-Ruffini para a raiz3
-        print('{:^6}   {:^13}   {:^13}'.format(*linha3))
-        print('         {:^13}   {:^13}'.format(*linha32)) 
+        print(f'{raiz3:^10}|{x3:^10}|{an22:^10}')
+        print(f'{me:^10}+{me:^10}+{me:^10}')
+        print(f'{va:^10}|{x3:^10}|{an23:^10}\n') 
     else:
         print(f'{raiz} não é uma raiz do polinômio {x3}x³{x2}x²{x1}x{a}')
 else:
