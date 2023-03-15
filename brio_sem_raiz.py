@@ -13,8 +13,8 @@ if grau == 3:
             praiz = i/c
             nraiz = -(i/c)
             ap2 = praiz * x3 + x2
-            ap1 = praiz * an2 + x1
-            ap0 = praiz * an1 + a
+            ap1 = praiz * ap2 + x1
+            ap0 = praiz * ap1 + a
             an2 = nraiz * x3 + x2
             an1 = nraiz * an2 + x1
             an0 = nraiz * an1 + a
@@ -24,7 +24,7 @@ if grau == 3:
               raiz = nraiz
               raiz2 = ((-an2)+ math.sqrt(an2**2-4*x3*an1))/(2*x3) 
               raiz3 = ((-an2)- math.sqrt(an2**2-4*x3*an1))/(2*x3)
-              print(f'As raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
+              print(f'\nAs raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
               va = ''
               me = '-'*10
               print(f'{raiz:^10}|{x3:^10}|{x2:^10}|{x1:^10}|{a:^10}')
@@ -47,8 +47,8 @@ if grau == 3:
             praiz = i/c
             nraiz = -(i/c)
             ap2 = praiz * x3 + x2
-            ap1 = praiz * an2 + x1
-            ap0 = praiz * an1 + a
+            ap1 = praiz * ap2 + x1
+            ap0 = praiz * ap1 + a
             an2 = nraiz * x3 + x2
             an1 = nraiz * an2 + x1
             an0 = nraiz * an1 + a
@@ -58,7 +58,7 @@ if grau == 3:
               raiz = nraiz
               raiz2 = ((-an2)+ math.sqrt(an2**2-4*x3*an1))/(2*x3) 
               raiz3 = ((-an2)- math.sqrt(an2**2-4*x3*an1))/(2*x3)
-              print(f'As raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
+              print(f'\nAs raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
               va = ''
               me = '-'*10
               print(f'{raiz:^10}|{x3:^10}|{x2:^10}|{x1:^10}|{a:^10}')
@@ -81,8 +81,8 @@ if grau == 3:
             praiz = i/c
             nraiz = -(i/c)
             ap2 = praiz * x3 + x2
-            ap1 = praiz * an2 + x1
-            ap0 = praiz * an1 + a
+            ap1 = praiz * ap2 + x1
+            ap0 = praiz * ap1 + a
             an2 = nraiz * x3 + x2
             an1 = nraiz * an2 + x1
             an0 = nraiz * an1 + a
@@ -92,7 +92,7 @@ if grau == 3:
               raiz = nraiz
               raiz2 = ((-an2)+ math.sqrt(an2**2-4*x3*an1))/(2*x3) 
               raiz3 = ((-an2)- math.sqrt(an2**2-4*x3*an1))/(2*x3)
-              print(f'As raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
+              print(f'\nAs raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
               va = ''
               me = '-'*10
               print(f'{raiz:^10}|{x3:^10}|{x2:^10}|{x1:^10}|{a:^10}')
@@ -115,8 +115,8 @@ if grau == 3:
             praiz = i/c
             nraiz = -(i/c)
             ap2 = praiz * x3 + x2
-            ap1 = praiz * an2 + x1
-            ap0 = praiz * an1 + a
+            ap1 = praiz * ap2 + x1
+            ap0 = praiz * ap1 + a
             an2 = nraiz * x3 + x2
             an1 = nraiz * an2 + x1
             an0 = nraiz * an1 + a
@@ -126,7 +126,7 @@ if grau == 3:
               raiz = nraiz
               raiz2 = ((-an2)+ math.sqrt(an2**2-4*x3*an1))/(2*x3) 
               raiz3 = ((-an2)- math.sqrt(an2**2-4*x3*an1))/(2*x3)
-              print(f'As raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
+              print(f'\nAs raízes do polinômio {x3}x³{x2}x²{x1}x{a} são: {raiz}, {raiz2}, {raiz3}\n')
               va = ''
               me = '-'*10
               print(f'{raiz:^10}|{x3:^10}|{x2:^10}|{x1:^10}|{a:^10}')
